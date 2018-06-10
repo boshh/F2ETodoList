@@ -1,0 +1,62 @@
+<div class="bg-lightgrey rounded border border-dark ">
+  <div *ngIf="!edit">
+    <input type="text" class="form-control" placeholder="+ Add Task" (click)="onEdit();">
+  </div>
+  <div class="container pt-3" *ngIf="edit">
+    <div class="row">
+      <div class="col-10">
+        <input type="checkbox" name="checkList" value="1" class="mr-2" />
+        <input type="text" class="text col-10" placeholder="Type Something Here">
+      </div>
+      <div class="col-2 text-right">
+        <i class="far fa-star"></i>
+        <i class="fas fa-pencil-alt"></i>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <i class="far fa-calendar-alt">&nbsp;Deadline</i>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <span class="mr-2">
+          <input type="date" class="text" value="2018/5/14">
+        </span>
+        <span>
+          <input type="time" class="text" value="14:30">
+        </span>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <i class="far fa-file">&nbsp;File</i>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <button>+</button>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+      <div class="col">
+        <i class="far fa-comment-dots">&nbsp;Comment</i>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col">
+        <textarea placeholder="type some words..." class="col-12  text"></textarea>
+      </div>
+    </div>
+
+    <div class="row bg-white rounded-bottom mt-2">
+      <span class="w-50 ">
+        <button type="button" class="btn-lg-c btn-red w-100" color="red" (click)="onCancel();">✕&nbsp;&nbsp;Cancel</button>
+      </span>
+      <span class="w-50">
+        <button type="button" class="btn-lg-c btn-blue w-100" (click)="onCancel();">＋&nbsp;&nbsp;Save</button>
+      </span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,136 @@
+/* You can add global styles to this file, and also import other style files */
+.center {
+  width: 40%;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .navbar-brand {
+  color: #00408b !important;
+  width: 150px;
+  height: 43px;
+  text-align: center;
+}
+
+.header .navbar-brand:hover {
+  border-bottom: 3px solid #00408b;
+  color: white !important;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4a90e2;
+  z-index: 9;
+}
+
+.text {
+  border: 0px;
+}
+
+.input-form-control {
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.menu_tab {
+  list-style: none; /*消除表單點點 */
+  display: flex;
+  justify-content: center; /*水平置中 */
+  margin: 0 auto;
+}
+
+.tabitem {
+  width: 220px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.active {
+  width: 160px;
+  color: #fff;
+  font-family: Roboto-Medium;
+  border-bottom: solid 5px #00408b;
+  border-bottom-width: 5px;
+}
+
+.a {
+  text-decoration: none;
+}
+
+.bg-blue {
+  background-color: #4a90e2;
+}
+.bg-deepblue {
+  background-color: #00408b;
+}
+.bg-red {
+  background-color: #d0021b;
+}
+.bg-oranges {
+  background-color: #f5a623;
+}
+
+.bg-oranges {
+  background-color: #fff2dc;
+}
+
+.bg-lightgrey {
+  background-color: #f2f2f2;
+}
+
+.bg-grey {
+  background-color: #C8c8c8;
+}
+
+.bg-deepgrey {
+  background-color: #757575;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.btn-red{
+  color:#d0021b;
+  background-color: transparent;
+  border:0;
+}
+
+.btn-red:hover{
+  color:white;
+  background-color: #d0021b;
+}
+
+.btn-blue{
+  color:#4a90e2;
+  background-color: transparent;
+  border:0;
+}
+
+.btn-blue:hover{
+  color:white;
+  background-color: #4a90e2;
+}
+
+.btn-lg-c {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+input[type=checkbox]:checked + span.strikethrough{
+  text-decoration: line-through;
+}
+
